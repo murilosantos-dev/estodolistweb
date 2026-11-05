@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Login - EsToDoList</title>
+</head>
+<body>
+    <h1>Login - EsToDoList</h1>
+
+    <form method="post" action="/login">
+        <label>Faça seu login de acesso: </label>
+        {% if msgerro %}
+            <p>{{msgerro}}</p>
+        {% endif %}
+        <br>
+        <input type="email" name="email" placeholder="Digite aqui seu e-mail..." required>
+        <br>
+        <input type="password" name="senha" placeholder="Dígite sua senha..." required>
+        <br><br>
+        <button type="submit">Acessar</button>
+    </form>
+
+</body>
+</html>
