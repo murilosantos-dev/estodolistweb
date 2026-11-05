@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EsToDoList</title>
-</head>
-<body>
-    <h1>Página Inicial - EsToDoList</h1>
-    <h2>Olá, Patrão!</h2>
-    <a href="/logout"><button>Sair</button></a>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Início | EsToDoList {% endblock %}
+
+{% block content %}
+    <main class="max-w-5xl mx-auto px-4 py-6">
+        <h2 class="text-2xl font-bold">Página Inicial</h2>
+    </main>
+{% endblock %}

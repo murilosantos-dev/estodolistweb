@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <Link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title> {% block title %} EsToDoList {% endblock %} </title>
+</head>
+<body class="bg-slate-100  text-slate-800 min-h-screen">
+    <header class="bg-indigo-600 text-white">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-xl md:text-3xl font-bold">EsToDoList</h1>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
